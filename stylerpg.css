@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: lightgrey;
+    background-size: cover;   
+}
+.capa{
+    width: 1288px;
+    height: 260px;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.capa_img{
+    width: 1288px;
+    height: 260px;
+    top: 0;
+    left: 0;
+    display: block;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background: black;
+    margin: 0;
+    text-align: center;
+    opacity: .8;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+nav ul li:hover{
+    background-color:dimgray;
+}
+nav ul ul{
+    position: absolute;
+    width: 200px;
+    background-color: darkgrey;
+    margin-top: 20px;
+    margin-left: -20px;
+    text-align: left;
+    display: none;
+}
+nav ul ul li{
+    display: block;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li a:hover{
+    color:dodgerblue;
+}
