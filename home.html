@@ -4,19 +4,50 @@
     	<meta charset="utf-8">
     	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon16x16.png">
     	<link rel="stylesheet" href= "stylerpg.css"/>
-    	<title>RPG - O que é?</title>
+    	<title>RPG - Home</title>
+    <script>
+        function dadoRpg(){
+            var qntd = parseInt(document.getElementById('qntd').value);
+            
+            var dx = parseInt(document.getElementById('dx').value);
+            
+            var modifica = parseFloat(document.getElementById('modifica').value);
+            
+            var resultado = 0;
+            
+            if(document.getElementsByName('opera')[0].checked){
+                resultado = qntd*(Math.floor(Math.random() * dx+1) + modifica);
+            }
+            
+            if(document.getElementsByName('opera')[1].checked){
+                resultado = qntd*(Math.floor(Math.random() * dx+1) - modifica);
+            }
+            
+           if(document.getElementById('roll').onclick){
+            document.getElementById('resultado').value = resultado;   
+           }
+          
+            /*
+           if(document.getElementById('reset').onclick){
+               document.getElementById('qntd').value = 0;
+               document.getElementById('dx').value = 0;
+               document.getElementById('modifica').value = 0;
+               document.getElementsByName('opera')[0].checked;
+           }*/
+        }
+    </script>    
+    
   	</head>
-  	<body>         
-        <div class="capa">
+    <div class="capa">
   			<img class="capa_img" src="img/ded2.jpg">    
   		</div>
             <nav> 
                 <ul class="navig">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="home.html">O que é?</a></li>
-                     <li><a>Como jogar?</a>
+                    <li><a href="howtoplay.html">Como jogar?</a>
                         <ul>
-                             <li><a>Conceitos Básicos</a></li>    
+                             <li><a href="howtoplay.html">Conceitos Básicos</a></li>    
                         </ul>
                     </li>            
                     <li><a>Dungeons &amp; Dragons</a>
@@ -29,5 +60,46 @@
                     </li>
                 </ul>
             </nav>
-      </body>
+  	<body>
+        <table style="width:100%">
+        <tr>
+            <th>Qntd Dados</th>
+            <th>Dx</th>
+            <th>&#43; &#45;</th>
+            <th>Modificador</th>
+            <th>ROLL</th>
+            <th>Resultados</th>
+            <th>RESET</th>
+        </tr>
+        <tr>
+            <td>
+                <form><input type="number" id="qntd" value="1"></form>
+            </td>
+            <td>
+                <form><input type="number" id="dx" value="1"></form>
+            </td>
+            <td>
+                <form action="#">
+                    <input type="radio" name="opera" id="mais" checked>
+                    <input type="radio" name="opera" id="menos">
+                </form>
+            </td>
+            <td>
+                <form>
+                    <input type="number" id="modifica" value="0"></form>
+            </td>
+            <td> 
+                <input id="roll" onClick="dadoRpg()" type="button" value="ROLL">
+            </td>
+            <td>
+                <input id="resultado" type="text"> 
+            </td>
+            <td>
+                <input id="reset" onClick="dadoRpg()" type="button" value="RESET">
+            </td>
+        </tr>
+        </table>
+        
+        
+    </body>
 </html>
