@@ -1,7 +1,39 @@
+@font-face {
+    font-family: 'breathe_fireregular';
+    src: url('font/breathfire-webfont.woff2') format('woff2'),
+         url('font/breathfire-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'the_wild_breath_of_zeldaRg';
+    src: url('font/zelda-webfont.woff2') format('woff2'),
+         url('font/zelda-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'spiral_initialsregular';
+    src: url('font/spiri___-webfont.woff2') format('woff2'),
+         url('font/spiri___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dungeonregular';
+    src: url('font/dungrg__-webfont.woff2') format('woff2'),
+         url('font/dungrg__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: dungeonregular;
     background-color: lightgrey;
     background-size: cover;   
 }
@@ -20,6 +52,7 @@ body{
     display: block;
 }
 nav{
+    font-size: 20px;
     width: 100%;
     background: black;
     margin: 0;
@@ -47,7 +80,7 @@ nav ul li:hover{
 nav ul ul{
     position: absolute;
     width: 200px;
-    background-color: darkgrey;
+    background-color: green;
     margin-top: 20px;
     margin-left: -20px;
     text-align: left;
@@ -71,11 +104,24 @@ th, td {
     text-align: left;
 }
 #pwhat{
-    margin-left: 60px;
-    margin-right: 60px;
-    text-align: justify;
+    font-family: dungeonregular;
+    font-size: 25px;
+    width: 75%;
+    margin-left: 150px;
+    padding-left: 30px;
+    text-align:justify;
     
 }
+#pwhat > figcaption{
+    text-align: center;
+}
 #pwhat > h1{
-    
+    font-size: 60px;
+    text-align: center;
+    font-family: breathe_fireregular; 
+}
+#pwhat > .imgwhat{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
 }
