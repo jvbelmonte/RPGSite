@@ -27,13 +27,17 @@
             document.getElementById('resultado').value = resultado;   
            }
           
-            /*
-           if(document.getElementById('reset').onclick){
-               document.getElementById('qntd').value = 0;
+          
+        }
+        function resetDado()
+        {
+
+               document.getElementById('qntd').value = 1;
                document.getElementById('dx').value = 0;
                document.getElementById('modifica').value = 0;
-               document.getElementsByName('opera')[0].checked;
-           }*/
+               document.getElementsByName('opera')[0].checked =1;
+               document.getElementsByName('opera')[1].checked =0;
+                document.getElementById('resultado').value = 0;  
         }
     </script>    
     
@@ -95,7 +99,7 @@
                 <input id="resultado" type="text"> 
             </td>
             <td>
-                <input id="reset" onClick="dadoRpg()" type="button" value="RESET">
+                <input id="reset" onClick="resetDado()" type="button" value="RESET">
             </td>
         </tr>
         </table>
