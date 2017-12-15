@@ -1,4 +1,8 @@
 @font-face {
+            font-family: 'barbarian'; 
+            src: url('font/Barbarian.ttf'); 
+        }
+@font-face {
     font-family: 'breathe_fireregular';
     src: url('font/breathfire-webfont.woff2') format('woff2'),
          url('font/breathfire-webfont.woff') format('woff');
@@ -34,18 +38,19 @@ body{
     margin: 0;
     padding: 0;
     font-family: dungeonregular;
+    background-image: url(img/backd202.jpg);
     background-color: lightgrey;
     background-size: cover;   
 }
 .capa{
-    width: 1288px;
+    width: 100%;
     height: 260px;
     top: 0;
     left: 0;
     display: block;
 }
 .capa_img{
-    width: 1288px;
+    width: 100%;
     height: 260px;
     top: 0;
     left: 0;
@@ -79,7 +84,6 @@ nav ul li:hover{
 }
 nav ul ul{
     position: absolute;
-    width: 200px;
     background-color: green;
     margin-top: 20px;
     margin-left: -20px;
@@ -95,30 +99,58 @@ nav ul li:hover > ul{
 nav ul ul li a:hover{
     color:dodgerblue;
 }
+/* --------INDEX.html-----------*/
+#tabeladado{
+    font-family: dungeonregular;
+    font-size: 25px;
+    width: 75%;
+    margin-left: 150px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align:justify;
+    background-color:floralwhite;
+}
+#tabeladado > h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: barbarian; 
+}
 table, th, td {
-    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: 1px solid black;
 }
 th, td {
     padding: 5px;
     text-align: left;
 }
+/* --------WHAT IS.html-----------*/
 #pwhat{
     font-family: dungeonregular;
     font-size: 25px;
     width: 75%;
+    padding-right: 20px;
     margin-left: 150px;
     padding-left: 30px;
+    padding-bottom: 20px;
     text-align:justify;
-    
+    background-color:floralwhite;
+
 }
 #pwhat > figcaption{
     text-align: center;
 }
+#pwhat > p > i{
+    font-family: spiral_initialsregular;
+    font-size: 60px;
+}
 #pwhat > h1{
     font-size: 60px;
     text-align: center;
-    font-family: breathe_fireregular; 
+    font-family: barbarian; 
 }
 #pwhat > .imgwhat{
     width: 40%;

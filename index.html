@@ -42,7 +42,7 @@
   	</head>
   
   	<body>
-          <div class="capa">
+        <div class="capa">
   			<img class="capa_img" src="img/ded2.jpg">    
   		</div>
             <nav> 
@@ -64,44 +64,55 @@
                     </li>
                 </ul>
             </nav>
-        <table style="width:100%">
-        <tr>
-            <th>Qntd Dados</th>
-            <th>Dx</th>
-            <th>&#43; &#45;</th>
-            <th>Modificador</th>
-            <th>ROLL</th>
-            <th>Resultados</th>
-            <th>RESET</th>
-        </tr>
-        <tr>
-            <td>
-                <form><input type="number" id="qntd" value="1"></form>
-            </td>
-            <td>
-                <form><input type="number" id="dx" value="1"></form>
-            </td>
-            <td>
-                <form action="#">
-                    <input type="radio" name="opera" id="mais" checked>
-                    <input type="radio" name="opera" id="menos">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <input type="number" id="modifica" value="0"></form>
-            </td>
-            <td> 
-                <input id="roll" onClick="dadoRpg()" type="button" value="ROLL">
-            </td>
-            <td>
-                <input id="resultado" type="text"> 
-            </td>
-            <td>
-                <input id="reset" onClick="resetDado()" type="button" value="RESET">
-            </td>
-        </tr>
-        </table>
+          
+        <div id="tabeladado">
+            <h1>Dado,customizavel></h1>
+            <table style="width:100%">
+                    <tr>
+                        <th>Qntd Dados</th>
+                        <th>D&#40;x&#41;</th>
+                        <th>&#43;&emsp; &#45;</th>
+                        <th>Modificador</th>
+                        <th>ROLL</th>
+                        <th>Resultados</th>
+                        <th>RESET</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form><input type="number" id="qntd" value="1"></form>
+                        </td>
+                        <td>
+                            <form><input type="number" id="dx" value="1"></form>
+                        </td>
+                        <td>
+                            <form action="#">
+                                <input type="radio" name="opera" id="mais" checked>
+                                <input type="radio" name="opera" id="menos">
+                            </form>
+                        </td>
+                        <td>
+                            <form>
+                                <input type="number" id="modifica" value="0"></form>
+                        </td>
+                        <td> 
+                            <input id="roll" onClick="dadoRpg()" type="button" value="ROLL">
+                        </td>
+                        <td>
+                            <input id="resultado" type="text"> 
+                        </td>
+                        <td>
+                            <input id="reset" onClick="resetDado()" type="button" value="RESET">
+                        </td>
+                    </tr>
+                    </table>
+      
+            <h1>Ficha,para,personagem></h1>
+            <p>&#9679;<a href="https://www.dropbox.com/s/9omxp35261j76am/CronicasRPG%20-%20Ficha%20de%20Personagem.pdf?dl=0" target="_blank">Download</a>&#9679; Ficha em PDF preenchível &#40;por Vanderlei Bastelli Filho&#41; para que os jogadores guardem as informações mais importantes sobre seus persongens. Se precisar entender melhor sobre a criação desta ficha, é só clicar &#9679;<a href="http://cronicasrpg.com.br/?p=2177" target="_blank">aqui</a>&#9679;</p>
+            
+            <p>&#9679;<a href="https://www.dropbox.com/s/9omxp35261j76am/CronicasRPG%20-%20Ficha%20de%20Personagem.pdf?dl=0" target="_blank">Download</a>&#9679; Ficha em PDF preenchível &#40;por Vanderlei Bastelli Filho&#41; para que os jogadores guardem as informações mais importantes sobre seus persongens. Se precisar entender melhor sobre a criação desta ficha, é só clicar &#9679;<a href="http://cronicasrpg.com.br/?p=2177" target="_blank">aqui</a>&#9679;</p>
+            
+        </div>        
+       
         
         
     </body>
