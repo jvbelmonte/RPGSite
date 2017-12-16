@@ -202,9 +202,62 @@ th, td {
     text-align: center;
     font-family: barbarian; 
 }
+#howplay > p > i{
+    font-family: spiral_initialsregular;
+    font-size: 60px;
+}
+#howplay > p > em > b >  i{
+    font-family: spiral_initialsregular;
+    font-size: 60px;
+}
+#howplay > figcaption{
+    text-align: center;
+}
+#howplay > #mestre{
+    width: 15%;
+    display: block; 
+}
+#howplay > .ddet{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+#howplay > .dadosf{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
 
+/* --------DED.html-----------*/
 
-
+#ded{
+    font-family: dungeonregular;
+    font-size: 25px;
+    width: 75%;
+    margin-left: 150px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    text-align:justify;
+    background-color:floralwhite;
+}
+#ded >  h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: barbarian; 
+}
+#ded > .livros{
+    width: 20%;
+    display: block;
+}
+#ded > .livrosL{
+    text-align: right;
+}
+#ded > .livrosR{
+    text-align: left;
+}
 
 
 
