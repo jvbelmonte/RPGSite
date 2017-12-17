@@ -107,7 +107,8 @@ nav ul ul li a:hover{
     font-family: dungeonregular;
     font-size: 25px;
     width: 75%;
-    margin-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -150,7 +151,8 @@ th, td {
      font-family: dungeonregular;
     font-size: 25px;
     width: 75%;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     padding-top: 10px;
     padding-right: 20px;
@@ -188,7 +190,8 @@ th, td {
     font-family: dungeonregular;
     font-size: 25px;
     width: 75%;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     padding-top: 10px;
     padding-right: 20px;
@@ -201,6 +204,9 @@ th, td {
     font-size: 60px;
     text-align: center;
     font-family: barbarian; 
+}
+#howeplay > h3{
+    text-align: center;
 }
 #howplay > p > i{
     font-family: spiral_initialsregular;
@@ -234,7 +240,8 @@ th, td {
     font-family: dungeonregular;
     font-size: 25px;
     width: 75%;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     padding-top: 10px;
     padding-right: 20px;
@@ -243,20 +250,41 @@ th, td {
     text-align:justify;
     background-color:floralwhite;
 }
-#ded >  h1{
+#ded > #oq >  h1{
     font-size: 60px;
     text-align: center;
     font-family: barbarian; 
 }
-#ded > .livros{
+#ded > #oq > .livros{
     width: 20%;
     display: block;
 }
-#ded > .livrosL{
+#ded > #oq > .livrosL{
     text-align: right;
 }
-#ded > .livrosR{
+#ded > #oq > .livrosR{
     text-align: left;
+}
+#ded > #class >  h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: barbarian; 
+}
+#ded > #class > .classes{
+    margin-top: auto;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+#ded > #racas >  h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: barbarian; 
+}
+#howplay > .racass{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
 }
 
 

@@ -6,14 +6,21 @@
     	<link rel="stylesheet" href= "stylerpg.css"/>
     	<title>RPG - Como jogar</title>
   	</head>
-  	<body>  
+  	<body>
+        
         <div class="capa">
   			<img class="capa_img" src="img/ded2.jpg">    
   		</div>
             <nav> 
                 <ul class="navig">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="whatis.html">O que é?</a></li>
+                    <li><a href="whatis.html">O que é?</a>
+                        <ul>
+                             <li><a href="whatis.html#Oquee"> O que é?</a></li>    
+                             <li><a href="whatis.html#Comofunciona"> Como funciona?</a></li>
+                             <li><a href="whatis.html#Historia">História</a></li>
+                        </ul>
+                    </li>    
                     <li><a href="howtoplay.html">Como jogar?</a>
                         <ul>
                              <li><a href="howtoplay.html#Conceitos">Conceitos Básicos</a></li>    
@@ -23,61 +30,308 @@
                         <ul>
                             <li><a href="ded.html#oquee">O que é?</a></li>
                             <li><a href="ded.html#sistemadedados">Sistema de Dados</a></li>
-                            <li><a href="ded.html#classes">Classes</a></li>
-                            <li><a href="ded.html#racas">Raças</a></li>
+                            <li><a href="ded.html#Classes">Classes</a></li>
+                            <li><a href="ded.html#Racas">Raças</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-        <div id="ded">
-            
-            
-            <h1><a id="oquee">O,que,e></a></h1>  
-                <p>
-                    Dungeons &amp; Dragons é o RPG mais famoso de todos os tempos e o mais jogado até hoje, além de ter sido o primeiro RPG a ser lançado por Gary Gygax e Dave Arneson, e publicado pela primeira vez em 1974 nos Estados Unidos pela TSR.
-                </p>
-                <h2>Base para Jogar</h2>
+        <div id="ded">  
+                <div id="oq">
+                    <h1><a id="oquee">O,que,e></a></h1>  
+                        <p>
+                            Dungeons &amp; Dragons é o RPG mais famoso de todos os tempos e o mais jogado até hoje, além de ter sido o primeiro RPG a ser lançado por Gary Gygax e Dave Arneson, e publicado pela primeira vez em 1974 nos Estados Unidos pela TSR.
+                        </p>
+                        <h2>Base para Jogar</h2>
 
-                <h3>LIVRO DO JOGADOR</h3>
-                <img align="left" class="livros" src="img/livro_jogador.jpg">
-                 <br/>
-                    <p class="livrosL">
-                        Para jogar D&amp;D é bom ter o livro "Livro do Jogador" que serve como guia para criar um personagem e apresenta todas as suas características, como classes, raças, talentos, perícias, equipamentos, entre outros termos básicos do jogo, estão presentes neste livro.
-                    </p>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                        <h3>LIVRO DO JOGADOR</h3>
+                        <img align="left" class="livros" src="img/livro_jogador.jpg">
+                         <br/>
+                            <p class="livrosL">
+                                Para jogar D&amp;D é bom ter o livro "Livro do Jogador" que serve como guia para criar um personagem e apresenta todas as suas características, como classes, raças, talentos, perícias, equipamentos, entre outros termos básicos do jogo, estão presentes neste livro.
+                            </p>
+                        <br/><br/><br/><br/>
 
-                <h3>GUIA DO MESTRE</h3>
-                <img align="right" class="livros" src="img/livro_mestre.jpg">
-                <br/>
-                    <p class="livrosR">
-                        O Guia do Mestre fornece ao Mestre ferramentas valiosas para a construção de encontros, aventuras e campanhas, assim como dicas para conduzir sessões de jogos inesquecíveis, armadilhas prontas para usar, personagens para uso na campanha e muito mais.
-                    </p>
-                 <br/>
-                 <br/>
-                 <br/>
-                 <br/>
+                        <h3>GUIA DO MESTRE</h3>
+                        <img align="right" class="livros" src="img/livro_mestre.jpg">
+                        <br/>
+                            <p class="livrosR">
+                                O Guia do Mestre fornece ao Mestre ferramentas valiosas para a construção de encontros, aventuras e campanhas, assim como dicas para conduzir sessões de jogos inesquecíveis, armadilhas prontas para usar, personagens para uso na campanha e muito mais.
+                            </p>
+                         <br/><br/><br/><br/>
 
-                <h3>MANUAL DOS MONSTROS</h3>
-                <img align="left"class="livros" src="img/livro_monstros.png">
-                 <br/>
-                 <br/>
-                    <p class="livrosL">
-                        O Manual dos Monstros apresenta mais de 300 monstros oficiais de Dungeons &amp; Dragons para todos os níveis de jogo, desde o Abolete até os Zumbis. Cada monstro tem uma ilustração e vem com estatísticas completas e dicas para o Mestre sobre como melhor usá-los em um encontro. É um manual fácil de ser utilizado e permite que os usuários aprendam as regras facilmente.
+                        <h3>MANUAL DOS MONSTROS</h3>
+                        <img align="left"class="livros" src="img/livro_monstros.png">
+                         <br/><br/>
+                            <p class="livrosL">
+                                O Manual dos Monstros apresenta mais de 300 monstros oficiais de Dungeons &amp; Dragons para todos os níveis de jogo, desde o Abolete até os Zumbis. Cada monstro tem uma ilustração e vem com estatísticas completas e dicas para o Mestre sobre como melhor usá-los em um encontro. É um manual fácil de ser utilizado e permite que os usuários aprendam as regras facilmente.
+                            </p>
+                         <br/><br/> 
+                        
+                        <h1 id="sistemadedados">Sistema,de,dados></h1>
+                        <img align="right" width="20%" src="img/d20.png"> 
+                        <p>
+                            O mecanismo básico para jogar D&amp;D é o seu sitema de dados. Para toda ação é necessário "rolar" o D20 que nada mais é do que um dado de 20 faces.<br/>Para saber se o jogador teve sucesso em sua jogada deve-se comparar o resultado do dado com o CD, classe de dificuldade, definida pelo Mestre ou pelas regras do livro. Caso o valor do dado for maior ou igual obteve sucesso senão não. 
+                        </p>       
+                        <p>
+                            O Sistema d20 foi lançado como "System Reference Document" (“Documento de Referência de Sistema”') sob OGL (Open Game License), ou seja, como um conteúdo de jogo aberto, o que permite a publicar comercial ou não comercialmente modificações ou suplementos para o sistema sem pagar pelo uso da propriedade intelectual associada, domínio da Wizards of the Coast.
+                        </p>
+                        <br/>
+                    </div>
+                <div id="class">
+                    <h1><a id="Classes">Classes></a></h1>
+                        <p>
+                            Uma classe de personagem agrega várias habilidades e aptidões e também pode detalhar aspectos de fundo e posição social ou impor restrições de comportamento. As classes podem ser considerados para representar arquétipos, ou carreiras específicas.
+                        </p>
+                    <h2>Tipos de Classes | Dado de Vida | Atributo(s) Principal(is)</h2>
+
+                    <h3>BÁRBARO, DV d12 , FOR</h3>
+                        <p>
+                        – Guerreiro selvagem capaz de entrar em fúria de combate por até 1 minuto recebendo mais força e mais dano.<br/>
+                        – Seu crítico bruto pode lhe conceder até +3 dados de dano.<br/>
+                        – Pode escolher entre dois Primal Paths: o Berserker – o caminho da fúria sangrenta OU o Totem Warrior: onde ele seguirá uma jornada espiritual.
                     </p>
-                 <br/>
-                 <br/> 
-            
-            
-            <h1 id="sistemadedados">Sistema,de,dados></h1>
-                <p>
-                    O mecanismo básico para jogar D&amp;D é o seu sitema de dados. Para toda ação é necessário "rolar" o D20 que nada mais é do que um dado de 20 faces.<br/>Para saber se o jogador teve sucesso em sua jogada deve-se comparar o resultado do dado com o CD, classe de dificuldade, definida pelo Mestre ou pelas regras do livro. Caso o valor do dado for maior ou igual obteve sucesso senão não. 
-                </p>
-                <p>
-                    O Sistema d20 foi lançado como "System Reference Document" (“Documento de Referência de Sistema”') sob OGL (Open Game License), ou seja, como um conteúdo de jogo aberto, o que permite a publicar comercial ou não comercialmente modificações ou suplementos para o sistema sem pagar pelo uso da propriedade intelectual associada, domínio da Wizards of the Coast.
-                </p>
-        </div>
+                        <img align="center" class="classes" src="img/barbaro.jpg">
+                        <br/><br/>
+
+                    <h3>BARDO, DV d8 , CAR</h3>
+                        <p>
+                        – Músico artista que pode conjurar magias e inspirar seus aliados.<br/>
+                        – Pode escolher entre dois colégios: o Lore: que lhe concederá mais conhecimento e magias OU o Valor: inspiração em combate.
+                    </p>
+                        <img align="center" class="classes" src="img/bardo.jpg">
+                        <br/><br/>
+
+                    <h3>CLÉRIGO, DV d8 , SAB</h3>
+                        <p>
+                        – O religioso, devoto a um deus, capaz de conjurar magias divinas e destruir mortos-vivos com sua fé.<br/>
+                        – Domínios divinos disponíveis: Knowledge, Life, Light, Nature, Tempest, Trickery e War.
+                    </p>
+                        <img align="center" class="classes" src="img/clerigo.jpg">
+                        <br/><br/>
+
+                    <h3>DRUIDA, DV d8 , SAB</h3>
+                        <p>
+                        – Ligado ao círculo da natureza, capaz de conjurar magias e assumir forma animal.<br/>
+                        – Círculos disponíveis: Land: fornece magias territoriais OU Moon: é capaz de assumir formas elementais.
+                    </p>
+                        <img align="center" class="classes" src="img/druida.jpg">
+                        <br/><br/>
+
+                    <h3>GUERREIRO, DV d10 , FOR e DES</h3>
+                        <p>
+                        O combatente, corpo-a-corpo ou à distância.<br/>
+                        – Escolhe estilo de luta.<br/>
+                        – Second Wind: habilidade que recupera PVs.<br/>
+                        – A partir de certo nível, ele adquire uma ação extra por turno.<br/>
+                        – Arquétipos marciais: Champion: guerreiro de poder físico / Battlemaster: adquire manobras de combate / Eldritch Knight: adquire magias em combate.
+                    </p>
+                        <img align="center" class="classes" src="img/guerreiro.jpg">
+                        <br/><br/>
+
+                    <h3>MONGE, DV d8 , DES e SAB</h3>
+                        <p>
+                        – Combatente disciplinado que recebe bônus por combater desarmado.<br/>
+                        – Possui a energia ‘Ki’ que possibilita executar alguns movimentos especiais.<br/>
+                        – Tradições de monge disponíveis: Way of the Open Hand, Way of Shadow, Way of Four Elements.
+                    </p>
+                        <img align="center" class="classes" src="img/monge.jpg">
+                        <br/><br/>
+
+                    <h3>PALADINO, DV d10 , FOR e CAR</h3>
+                        <p>
+                        – Guerreiro sagrado. Faz um juramento sagrado: de Devoção, aos Anciões ou por Vingança.<br/>
+                        – Seleciona estilo de luta e possui magias divinas.
+                    </p>
+                        <img align="center" class="classes" src="img/paladino.jpg">
+                        <br/><br/>
+
+                    <h3>PATRULHEIRO, DV d10 , DES e SAB</h3>
+                        <p>
+                        – Seleciona estilo de luta e possui acesso a magias.<br/>
+                        – Possui inimigo predileto.<br/>
+                        – Arquétipos disponíveis: Hunter: focado pro combate e Beast Master: recebe companheiro animal.
+                    </p>
+                        <img align="center" class="classes" src="img/patrulheiro.jpg">
+                        <br/><br/>
+
+                    <h3>LADINO, DV d8 , DES</h3>
+                        <p>
+                        – O ladrão, o enganador, o trapaceiro, ele possui ataque furtivo.<br/>
+                        – Arquétipos: Thief: criminoso / Assassin: matador / Arcane Trickster: possui acesso a magias como um ‘trapaceiro arcano’.
+                    </p>
+                        <img align="center" class="classes" src="img/ladino.jpg">
+                        <br/><br/>
+
+                    <h3>FEITICEIRO, DV d6 , CAR</h3>
+                        <p>
+                        – Poderoso conjurador de magias arcanas.<br/>
+                        – Escolhe origem: Draconic Bloodline: como um ‘discípulo do dragão’ OU Wild Magic: onde ele rola 1d100 e possui uma lista com diversos efeitos aleatórios.
+                    </p>
+                        <img align="center" class="classes" src="img/feiticeiro.jpg">
+                        <br/><br/><br/>
+
+                    <h3>BRUXO, DV d8 , CAR</h3>
+                        <p>
+                        – Realiza pacto com ser de outro mundo: Archfey, Fiend ou Great Old One.<br/>
+                        – Faz invocações e possui acesso a magias.
+                    </p>
+                        <img align="center" class="classes" src="img/bruxo.jpg">
+                        <br/><br/>
+
+                    <h3>MAGO, DV d6 , INT</h3>
+                        <p>
+                        – Clássico mago com grimório de magias.<br/>
+                        – Escolas de magias disponíveis da tradição arcana: Abjuration / Conjuration / Divination / Enchantment / Evocation / Illusion / Necromancy / Transmutation.
+                    </p>
+                        <img align="center" class="classes" src="img/mago.jpg">
+                        <br/><br/>
+
+                    </div>
+                <div id="racas">    
+                    <h1><a id="Racas">Racas></a></h1>
+                    <p>
+                        Entre todas as raças existentes no universo de D&amp;D as mais populares são:
+                    </p>
+                    <h2>Anões</h2>
+                        <h3>ASPECTOS RACIAIS:</h3>
+                        <img align="left"class="racass" src="img/racas/anao.png">
+                        <p>
+                            <em><b>Altura Média:</b></em>&nbsp;&nbsp; 1,25 m -1,50 m<br/>
+
+                            <em><b>Peso Médio:</b></em>&nbsp;&nbsp; 80 kg- 11O kg<br/>
+
+                            <em><b>Valores de Atributo:</b></em>&nbsp;&nbsp; + 2 em Constituição, + 2 em Sabedoria<br/>
+
+                            <em><b>Tamanho:</b></em>&nbsp;&nbsp; Médio<br/>
+
+                            <em><b>Deslocamento:</b></em>&nbsp;&nbsp; 5 quadrados<br/>
+
+                            <em><b>Visão:</b></em>&nbsp;&nbsp; Penumbra<br/>
+
+                            <em><b>Idiomas:</b></em>&nbsp;&nbsp; Comum, Anão<br/>
+
+                            <em><b>Bônus nas Perícias:</b></em>&nbsp;&nbsp; + 2 em Exploração,+ 2 em Tolerância<br/> 
+
+                            <em><b>Estômago Inabalável:</b></em>&nbsp;&nbsp; +5 de bônus racial nos testes de resistência contra veneno.<br/>
+
+                            <em><b>Resiliência dos Anões:</b></em>&nbsp;&nbsp; Um anão pode retomar o fôlego usando uma ação mínima em vez de uma ação padrão.<br/>
+
+                            <em><b>Proficiência com Armas dos Anões:</b></em>&nbsp;&nbsp; Os anões são proficientes com o uso do martelo de arremesso e martelo de guerra.<br/>
+
+                            <em><b>Deslocamento com Sobrecarga:</b></em>&nbsp;&nbsp; Os anões se movem com seu deslocamento normal mesmo quando uma armadura ou carga pesada estiver reduzindo o seu deslocamento. Os outros efeitos que limitam o deslocamento (como terreno acidentado ou efeitos mágicos) afetam normalmente os anões.<br/>
+
+                            <em><b>Firmar-se ao Solo:</b></em>&nbsp;&nbsp; Quando um efeito obrigar um anão a se mover - por meio das manobras puxar, empurrar ou conduzir - ele pode se deslocar 1 quadrado a menos do que o valor indicado. Isso significa que um efeito que normalmente empurraria, puxaria ou conduziria o alvo apenas 1 quadrado não deslocará um anão, a menos que ele o permita. Além disso, quando um ataque deixar o anão derrubado, ele pode realizar um teste de resistência imediatamente para não ficar derrubado. 
+                        </p>
+                    <h2>Elfos</h2>
+                        <img align="right"class="racass" src="img/racas/elfo.png"> 
+                        <h3>ASPECTOS RACIAIS</h3>        
+                        <p>
+                            <em><b>Altura Média:</b></em>&nbsp;&nbsp; 1,50 m - 1,80 m <br/>
+
+                            <em><b>Peso Médio:</b></em>&nbsp;&nbsp;65 kg - 85 kg <br/>
+
+                            <em><b>Valores de Atributo:</b></em>&nbsp;&nbsp; + 2 em Destreza,+ 2 em Sabedoria<br/>
+
+                            <em><b>Tamanho:</b></em>&nbsp;&nbsp; Médio<br/>
+
+                            <em><b>Deslocamento:</b></em>&nbsp;&nbsp; 7 quadrados<br/>
+
+                            <em><b>Visão:</b></em>&nbsp;&nbsp; Penumbra<br/>
+
+                            <em><b>Idiomas:</b></em>&nbsp;&nbsp; Comum, Élfico<br/>
+
+                            <em><b>Bônus nas Perícias:</b></em>&nbsp;&nbsp; : + 2 em Natureza,+ 2·em Percepção<br/> 
+
+                            <em><b>Proficiência com Armas dos Elfos</b></em>&nbsp;&nbsp;  Os elfos são proficientes com o uso dos arcos longos e curtos. <br/>
+
+                            <em><b>Origem Feérica:</b></em>&nbsp;&nbsp; Os ancestrais dessa raça são nativos da Agrestia das Fadas, portanto os elfos são considerados seres do tipo fada para os efeitos relacionados à sua origem.<br/>
+
+                            <em><b>Prontidão Coletiva:</b></em>&nbsp;&nbsp; Um elfo concede + 1 de bônus racial nos testes de Percepção aos aliados de outras raças que estiverem a até S quadrados dele.<br/>
+
+                            <em><b>Passo Selvagem:</b></em>&nbsp;&nbsp;  Os elfos ignoram o terreno acidentado ao realizar um ajuste (mesmo quando usam poderes que permitem ajustar diversos quadrados). <br/>
+
+                            <em><b>Precisão Élfica:</b></em>&nbsp;&nbsp; Os membros dessa raça podem usar precisão é/fica como um poder por encontro.                       
+                        </p>
+                    <h2>Humanos</h2>
+                        <h3>ASPECTOS RACIAIS</h3>
+                        <img width="20%" class="racass" src="img/racas/humano.png">
+                        <p>
+                            <em><b>Altura Média:</b></em>&nbsp;&nbsp; 1,65 m - 1,90 m <br/>
+
+                            <em><b>Peso Médio:</b></em>&nbsp;&nbsp;65 kg - 110 kg <br/>
+
+                            <em><b>Valores de Atributo:</b></em>&nbsp;&nbsp;  + 2 num valor de atributo à escolha do jogador<br/>
+
+                            <em><b>Tamanho:</b></em>&nbsp;&nbsp; Médio<br/>
+
+                            <em><b>Deslocamento:</b></em>&nbsp;&nbsp; 6 quadrados<br/>
+
+                            <em><b>Visão:</b></em>&nbsp;&nbsp; Normal<br/>
+
+                            <em><b>Idiomas:</b></em>&nbsp;&nbsp; Comum, escolha mais um<br/>
+
+                            <em><b>Poder Sem Limite Adicional:</b></em>&nbsp;&nbsp; Os humanos conhecem um poder de ataque sem limite adicional de 1° nível de sua classe.<br/>
+
+                            <em><b>Talento Adicional</b></em>&nbsp;&nbsp;  Um humano recebe um talento adicional no 1° nível. Ele deve atender aos pré-requisitos do talento.<br/>
+
+                            <em><b>Perícia Adicional: </b></em>&nbsp;&nbsp;  Os membros dessa raça recebem treinamento numa perícia adicional da lista de perícia da sua classe.  <br/>
+
+                            <em><b>Bônus de Defesa dos Humanos:</b></em>&nbsp;&nbsp;+ 1 nas defesas de Fortitude, Reflexos e Vontade.      
+                        </p>
+                    <h2>Meio-Elfos</h2>
+                        <h3>ASPECTOS RACIAIS</h3>
+                        <img align="right" width="20%" class="racass" src="img/racas/meioelfo.png">
+                        <p>
+                            <em><b>Altura Média:</b></em>&nbsp;&nbsp; 1,65 m - 1,85 m <br/>
+
+                            <em><b>Peso Médio:</b></em>&nbsp;&nbsp;65 kg - 95 kg <br/>
+
+                            <em><b>Valores de Atributo:</b></em>&nbsp;&nbsp;  :+ 2 em Constituição,+ 2 em Carisma <br/>
+
+                            <em><b>Tamanho:</b></em>&nbsp;&nbsp; Médio<br/>
+
+                            <em><b>Deslocamento:</b></em>&nbsp;&nbsp; 6 quadrados<br/>
+
+                            <em><b>Visão:</b></em>&nbsp;&nbsp; Penumbra<br/>
+
+                            <em><b>Idiomas:</b></em>&nbsp;&nbsp; Comum, Élfico e escolha mais um <br/>
+
+                            <em><b>Bônus nas Perícias: </b></em>&nbsp;&nbsp; + 2 em Diplomacia, +2 em Intuição.<br/>
+
+                            <em><b>Diletante</b></em>&nbsp;&nbsp; No 1 ° nível, o meio·elfo escolhe um poder de ataque sem limite de 1° nível de uma classe diferente da sua. Ele pode usá-lo como um poder por encontro.<br/>
+
+                            <em><b>Herança Dupla:</b></em>&nbsp;&nbsp;  Os meio-elfos podem adquirir talentos que possuam humano ou elfo como pré-requisito (assim como aqueles específicos para os meio-elfos), desde que atendam aos demais pré-requisitos.   <br/>
+
+                            <em><b>Diplomacia Coletiva:</b></em>&nbsp;&nbsp;Os meio-elfos concedem + 1 de bônus racial nos testes de Diplomacia aos aliados a até 1 O quadrados deles.
+                        </p>  
+                    <h2>Halflings</h2>
+                        <h3>ASPECTOS RACIAIS</h3>
+                        <img align="left" width="30%" class="racass" src="img/racas/halfling.png">
+                        <p>
+                            <em><b>Altura Média:</b></em>&nbsp;&nbsp; 1,15 m - 1,25 m <br/>
+
+                            <em><b>Peso Médio:</b></em>&nbsp;&nbsp;35 kg - 50 kg <br/>
+
+                            <em><b>Valores de Atributo:</b></em>&nbsp;&nbsp;  :+ 2 em Destreza,+ 2 em Carisma <br/>
+
+                            <em><b>Tamanho:</b></em>&nbsp;&nbsp; Pequeno<br/>
+
+                            <em><b>Deslocamento:</b></em>&nbsp;&nbsp; 6 quadrados<br/>
+
+                            <em><b>Visão:</b></em>&nbsp;&nbsp; Normal<br/>
+
+                            <em><b>Idiomas:</b></em>&nbsp;&nbsp; Comum, escolha mais um <br/>
+
+                            <em><b>Bônus nas Perícias: </b></em>&nbsp;&nbsp; + 2 em Acrobacia, +2 em Ladinagem.<br/>
+
+                            <em><b>Ousadia</b></em>&nbsp;&nbsp; Um halfling recebe +5 nos testes de resistência contra medo.<br/>
+
+                            <em><b>Reação Lépida:</b></em>&nbsp;&nbsp;  Os halflings recebem + 2 de bônus racial na CA contra ataques de oportunidade.<br/>
+
+                            <em><b>Segunda Chance:</b></em>&nbsp;&nbsp;Os membros dessa raça podem usar seaunda chance como um poder por encontro.
+                        </p>    
+                </div>
+            </div>
     </body>
 </html>
