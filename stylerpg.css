@@ -1,3 +1,4 @@
+/*---------FONTES--------*/
 @font-face {
             font-family: 'barbarian'; 
             src: url('font/Barbarian.ttf'); 
@@ -34,24 +35,27 @@
     font-style: normal;
 
 }
+/*---------BODY--------*/
 body{
+    width: 100%;    
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: dungeonregular;
     background-image: url(img/backd202.jpg);
-    background-color: lightgrey;
-    background-size: cover;   
+    background-size: auto;    
 }
+/*---------CAPA--------*/
 .capa{
     width: 100%;
-    height: 260px;
+    height: 100%;
     top: 0;
     left: 0;
     display: block;
 }
 .capa_img{
     width: 100%;
-    height: 260px;
+    height: 100%;
     top: 0;
     left: 0;
     display: block;
@@ -102,6 +106,27 @@ nav ul ul li a:hover{
 }
 
 
+/* --------RODAPE-----------*/
+#rodape{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family:serif;
+    font-size: 13px;
+}
+#rodape > #left{
+    text-align: left;
+}
+#rodape > a > #git{
+    width: 5%;
+    display: block;
+    margin: 0 auto; 
+    opacity: 1;
+}
+
+
 /* --------INDEX.html-----------*/
 #tabeladado{
     font-family: dungeonregular;
@@ -109,14 +134,13 @@ nav ul ul li a:hover{
     width: 75%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
     text-align:justify;
-    background-color:floralwhite;
+    background-image: url(img/papirofundo.jpg);
+    background-size: auto;    
 }
 #tabeladado > h1{
     font-size: 60px;
@@ -130,7 +154,7 @@ table, th, td {
     padding-right: 10px;
     border: 1px solid black;
 }
-th, td {
+th , td {
     padding: 5px;
     text-align: left;
 }
@@ -153,13 +177,13 @@ th, td {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
     text-align:justify;
-    background-color:floralwhite;
+    background-image: url(img/papirofundo.jpg);
+    background-size: auto;   
 }
 #pwhat > figcaption{
     text-align: center;
@@ -192,13 +216,13 @@ th, td {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
     text-align:justify;
-    background-color:floralwhite;
+    background-image: url(img/papirofundo.jpg);
+    background-size: auto; 
 }
 #howplay >  h1{
     font-size: 60px;
@@ -218,6 +242,11 @@ th, td {
 }
 #howplay > figcaption{
     text-align: center;
+}
+#howplay > .racass{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
 }
 #howplay > #mestre{
     width: 15%;
@@ -242,13 +271,13 @@ th, td {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
     text-align:justify;
-    background-color:floralwhite;
+    background-image: url(img/papirofundo.jpg);
+    background-size: auto; 
 }
 #ded > #oq >  h1{
     font-size: 60px;
@@ -280,11 +309,6 @@ th, td {
     font-size: 60px;
     text-align: center;
     font-family: barbarian; 
-}
-#howplay > .racass{
-    width: 15%;
-    display: block;
-    margin: 0 auto;
 }
 
 
