@@ -1,138 +1,218 @@
 <!DOCTYPE html>
 <html>
-  	<head>
-    	<meta charset="utf-8">
-    	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon16x16.png">
-    	<link rel="stylesheet" href= "stylerpg.css"/>
-    	<title>RPG - Home</title>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Static Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="mystyle.css"/>
+    <link rel="stylesheet" type="text/css" href="users.css"/>
+    <link rel="stylesheet" type="text/css" href="graphic.css"/>
+    <link rel="stylesheet" type="text/css" href="feed.css"/>            
+    <link rel="stylesheet" type="text/css" href="main_profile.css"/>    
     <script>
-        function dadoRpg(){
-            var qntd = parseInt(document.getElementById('qntd').value);
-            
-            var dx = parseInt(document.getElementById('dx').value);
-            
-            var modifica = parseFloat(document.getElementById('modifica').value);
-            
-            var resultado = 0;
-            
-            if(document.getElementsByName('opera')[0].checked){
-                resultado = qntd*(Math.floor(Math.random() * dx+1) + modifica);
+        function fun1(){
+            var f1 = parseInt(document.getElementById('f1').value);
+
+            if(f1<10){
+                f1 = f1+1;
+                document.getElementById('f1').value =  f1;
             }
-            
-            if(document.getElementsByName('opera')[1].checked){
-                resultado = qntd*(Math.floor(Math.random() * dx+1) - modifica);
+        }
+        function fun12(){
+            var f1 = parseInt(document.getElementById('f1').value);
+
+            if(f1>0){
+                f1 = f1-1;
+                document.getElementById('f1').value =  f1;
             }
+        }
+        
+        function fun2(){
+            var f2 = parseInt(document.getElementById('f2').value);
+            if(f2<10){
+                f2+=1;
+                document.getElementById('f2').value =  f2;
+            }
+        }
+        function fun22(){
+            var f2 = parseInt(document.getElementById('f2').value);
+            if(f2>0){
+                f2--;
+                document.getElementById('f2').value =  f2;
+            }
+        }
+        function fun3(){
+            var f3 = parseInt(document.getElementById('f3').value);
+            if(f3<10){
+                f3+=1;
+                document.getElementById('f3').value =  f3;
+            }
+        }
+        function fun32(){
+            var f3 = parseInt(document.getElementById('f3').value);
+            if(f3>0){
+                f3--;
+                document.getElementById('f3').value =  f3;
+            }
+        }
+        function zero(){
+            (document.getElementById('f1').value) = 0;
+            (document.getElementById('f2').value) = 0; 
+            (document.getElementById('f3').value) = 0;
+            document.getElementById('send_text').value = '';
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div id = "menu">
             
-           if(document.getElementById('roll').onclick){
-            document.getElementById('resultado').value = resultado;   
-           }
-          
-          
-        }
-        function resetDado(){
-               document.getElementById('qntd').value = 1;
-               document.getElementById('dx').value = 1;
-               document.getElementById('modifica').value = 0;
-               document.getElementsByName('opera')[0].checked =1;
-               document.getElementsByName('opera')[1].checked =0;
-               document.getElementById('resultado').value = 0;  
-        }
-    </script>       
-  	</head> 
-  	<body>
-        <div class="capa">
-  			<img class="capa_img" src="img/ded2.jpg">    
-  		</div>
-          <nav> 
-                <ul class="navig">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="whatis.html">O que é?</a>
+            <p id="welcome">Welcome, João</p>
+            
+            <div id="profile">
+                <img src="img/foto_perfil.jpg"> 
+                <p>
+                    <h3>Joao Vitor Belmonte</h3>
+                    @jvbelmonte
+                </p>
+            </div>
+
+            <p id="is"><br>TRAINEE</p>
+
+            <nav id = "lista">
+                <ul>
+                    <li><a href="#">Menu 1</a>
                         <ul>
-                             <li><a href="whatis.html#Oquee"> O que é?</a></li>    
-                             <li><a href="whatis.html#Comofunciona"> Como funciona?</a></li>
-                             <li><a href="whatis.html#Historia">História</a></li>
+                            <li><a href="#"> > sub menu 1</a></li>
+                            <li><a href="#"> > sub menu 1</a></li>
+                        </ul>
+                    </li>      
+
+                    <li><a href="#">Menu 2</a>
+                        <ul>
+                            <li><a href="#"> > sub menu 2</a></li>
+                            <li><a href="#"> > sub menu 2</a></li>
+                        </ul>
+                    </li>        
+
+                    <li><a href="#">Menu 3</a>
+                        <ul>
+                            <li><a href="#"> > sub menu 3</a></li>
+                            <li><a href="#"> > sub menu 3</a></li>
                         </ul>
                     </li>    
-                    <li><a href="howtoplay.html">Como jogar?</a>
+
+                    <li><a href="#">Menu 4</a>
                         <ul>
-                             <li><a href="howtoplay.html#Conceitos">Conceitos Básicos</a></li>    
+                            <li><a href="#"> > sub menu 4</a></li>
+                            <li><a href="#"> > sub menu 4</a></li>
                         </ul>
-                    </li>            
-                    <li><a href="ded.html">Dungeons &amp; Dragons</a>
-                        <ul>
-                            <li><a href="ded.html#oquee">O que é?</a></li>
-                            <li><a href="ded.html#sistemadedados">Sistema de Dados</a></li>
-                            <li><a href="ded.html#Classes">Classes</a></li>
-                            <li><a href="ded.html#Racas">Raças</a></li>
-                        </ul>
-                    </li>
+                    </li>    
                 </ul>
             </nav>
-        <div id="tabeladado">
-            <h1>Dado,customizavel></h1>
-            <table style="width:100%">
-                    <tr>
-                        <th>Qntd Dados</th>
-                        <th>D&#40;x&#41;</th>
-                        <th>&#43;&emsp; &#45;</th>
-                        <th>Modificador</th>
-                        <th>ROLL</th>
-                        <th>Resultados</th>
-                        <th>RESET</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form><input type="number" id="qntd" value="1"></form>
-                        </td>
-                        <td>
-                            <form><input type="number" id="dx" value="1"></form>
-                        </td>
-                        <td>
-                            <form action="#">
-                                <input type="radio" name="opera" id="mais" checked>
-                                <input type="radio" name="opera" id="menos">
-                            </form>
-                        </td>
-                        <td>
-                            <form>
-                                <input type="number" id="modifica" value="0"></form>
-                        </td>
-                        <td> 
-                            <img src="img/roll1.jpg" id="roll" onClick="dadoRpg()" value="ROLL">
-                        </td>
-                        <td>
-                            <input id="resultado" type="text"> 
-                        </td>
-                        <td>
-                            <img src="img/reset1.jpg" id="reset" onClick="resetDado()" value="RESET">
-                        </td>
-                    </tr>
-                    </table>
-      
-            <h1>Ficha,para,personagem></h1>
-            <p>&#9679;<a href="https://www.dropbox.com/s/9omxp35261j76am/CronicasRPG%20-%20Ficha%20de%20Personagem.pdf?dl=0" target="_blank">Download</a>&#9679; Ficha em PDF preenchível &#40;por Vanderlei Bastelli Filho&#41; para que os jogadores guardem as informações mais importantes sobre seus persongens. Se precisar entender melhor sobre a criação desta ficha, é só clicar &#9679;<a href="http://cronicasrpg.com.br/?p=2177" target="_blank">aqui</a>&#9679;</p>
-            
-            <p>&#9679;<a href="http://www.rpgnoticias.com.br/download/6156/w.dropbox.com/s/9omxp35261j76am/CronicasRPG%20-%20Ficha%20de%20Personagem.pdf?dl=0" target="_blank">Download</a>&#9679; Uma ficha simples e bem parecida com a oficial, mas que permite que você preencha os dados no próprio PDF.</p>
-            
-            <h1>Dungeons,and,dragons,iv></h1>
-            
-            <img class="fotolivro"src="img/manualdosmontros.png">
-            <figcaption>
-                <a href="https://www.4shared.com/folder/Vb9H7zqE/4_online.html" target="_blank">
-                DOWNLOAD</a><br/>
-                Autor: James Wyatt<br/>
-                Editora: RGCR<br/>
-                Lançamento: 2011<br/>
-                Idioma: Português<br/>
-            </figcaption>
-            
-        </div>
-        <div id="rodape">
-            <a href="https://github.com/jvbelmonte/RPGSite" target="_blank"><img align="right" id="git" src="img/github.svg"></a>
-                <p id="left">
-                Desenvolvedor: João Vitor Belmonte<br/>
-                © 1995-2017 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.
-            </p>        
         </div>   
-    </body>
+        
+        <div id = "users">
+            <div class="profile_block">
+                <img src="img/foto_perfil.jpg">
+                <p>Fulano da Silva<br>Cargo</p>
+            </div>
+
+            <div class="profile_block">
+                <img src="img/foto_perfil.jpg">
+                <p>Fulano da Silva<br>Cargo</p>
+            </div>
+
+            <div class="profile_block">
+                <img src="img/foto_perfil.jpg">
+                <p>Fulano da Silva<br>Cargo</p>
+            </div>
+
+            <div class="profile_block">
+                <img src="img/foto_perfil.jpg">
+                <p>Fulano da Silva<br>Cargo</p>
+            </div>
+        </div>
+        
+        <div id="down">
+
+            <div id="feed" class="box">
+                <h2>Feedback</h2>
+                
+                <div class="feedback_line">
+                    <span>Feedback 1<br></span>
+                    <button class="bt_less" id="bl1" onClick="fun12(); drawChart();">-</button>   
+                    <input id="f1" type="text" value="0">
+                    <button class="bt_more" id="bm1" onClick="fun1(); drawChart();">+</button>   
+                </div>
+                
+                <div class="feedback_line">
+                    <span>Feedback 2<br></span>
+                    <button class="bt_less" id="bl2" onClick="fun22(); drawChart();">-</button>   
+                    <input id="f2" type="text" value="0">
+                    <button class="bt_more" id="bm2" onClick="fun2(); drawChart();">+</button>   
+                </div>
+
+                <div class="feedback_line">
+                    <span>Feedback 3<br></span>
+                    <button class="bt_less" id="bl3" onClick="fun32(); drawChart();">-</button>   
+                    <input id="f3" type="text" value="0">
+                    <button class="bt_more" id="bm3" onClick="fun3(); drawChart();">+</button>   
+                </div>
+
+                <div class="feedback_line"  id="feed4">
+                    <span>Feedback 4</span>
+                    <input id="send_text">
+                    <button id="send" onClick="zero(); drawChart();">Send</button>
+                </div>
+            </div>
+
+            <div id="pizza" class="box">
+                <h2>Graphic</h2>
+                <div id="graphic"></div>
+            </div>
+
+            <div id="main_profile" class="box">
+                <h2>Profile</h2>
+                <img src="img/foto_perfil.jpg">
+                
+                <p>Cargo<br>Fulano da Silva<br><br>@fulanin<br><br>Contato: fulanodasilva@email.com</p>
+            </div>
+
+        </div>    
+        
+    </div>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var f1 = parseInt(document.getElementById('f1').value);
+        var f2 = parseInt(document.getElementById('f2').value);
+        var f3 = parseInt(document.getElementById('f3').value);
+
+        var data = google.visualization.arrayToDataTable([
+          ['var 1', 'var 2'],
+          ['Feedback 1', f1],
+          ['Feedback 2', f2],
+          ['Feedback 3', f3],
+        ]);
+
+        var options = {
+            width:  380, 
+            height: 300,
+            fontSize: 12,
+            is3D: true
+        }
+
+        var chart = new google.visualization.PieChart(document.getElementById('graphic'));
+
+        chart.draw(data, options);
+      }
+    </script>    
+</body>
 </html>
